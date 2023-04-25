@@ -37,6 +37,11 @@ const NavBar = () => {
     dispatch(createTeam());
   };
 
+  const handleGithubLink = (e) => {
+    e.preventDefault();
+    window.open("https://github.com/shawnkoong/ChinguBoard");
+  };
+
   return (
     <nav
       className="grid grid-cols-5 gap-none
@@ -80,9 +85,7 @@ const NavBar = () => {
 
       <div className="flex justify-end">
         <div className="grid grid-cols-3 gap-2 items-center">
-          <button>
-            onClick={window.open("https://github.com/shawnkoong/ChinguBoard")}
-          >
+          <button onClick={(e) => handleGithubLink(e)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
