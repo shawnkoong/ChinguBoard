@@ -1,5 +1,7 @@
 # ChinguBoard
 
+[live site] (https://chinguboard.vercel.app/)
+
 # Badges
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chingu-voyages/v43-tier3-team-45?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/chingu-voyages/v43-tier3-team-45?style=plastic)
