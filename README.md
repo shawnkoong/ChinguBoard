@@ -2,10 +2,6 @@
 
 [live site](https://chinguboard.vercel.app/)
 
-# Badges
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chingu-voyages/v43-tier3-team-45?style=plastic)
-![GitHub repo size](https://img.shields.io/github/repo-size/chingu-voyages/v43-tier3-team-45?style=plastic)
-
 # Description
 Chingu Board is a task and bug tracker that helps users track and fix issues efficiently.  
 
@@ -34,49 +30,27 @@ The app consists of :
 * Edit issue type, add or remove team members, add issue description, add comments. 
 
 # Technologies used in the project
-* Java Spring Boot 
-* React
-* TailwindCSS
-* Redux
-* MongoDB
-* AWS S3 bucket for hosting images
-* Backend is deployed on Raleway
-* Frontend is deployed on Vercel
+* Front End 
+  * React
+  * TailwindCSS
+  * Redux
+* Back End
+  * Spring Boot
+  * Spring Security
+  * MongoDB
+  * AWS S3
 
-# File Structure
+## Running locally
+First clone this repo
 ```
+git clone https://github.com/shawnkoong/ChinguBoard.git
+cd ChinguBoard
 
- ```       
-
-## Installation
-Using the command line, clone the repo on your machine
-```
-git clone <remote url copied from Github>
-cd <repo directory name>
-
-Make sure you have node and npm installed
-``
 
 ## Usage
 
 Create a .env file using the example.env template (make a copy using the variables inside of the template)
 
 Install node and npm
-```npm install
+
 ```
-
-
-
-*Note: The portfolio site will only work on your local machine while you have it running inside of your terminal. 
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-# Visuals
-
-
-# Inspiration
-[https://www.figma.com/file/cbVJbxz0ztFTfMqWRlEANc/ChinguBoard?node-id=0%3A1&t=PYShR95vLPpdDL1F-1)](https://www.figma.com/file/cbVJbxz0ztFTfMqWRlEANc/ChinguBoard?node-id=0%3A1&t=PYShR95vLPpdDL1F-1)
