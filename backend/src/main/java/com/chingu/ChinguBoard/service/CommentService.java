@@ -1,12 +1,15 @@
 package com.chingu.ChinguBoard.service;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import com.chingu.ChinguBoard.model.Comment;
+import com.chingu.ChinguBoard.model.User;
 import com.chingu.ChinguBoard.repository.CommentRepository;
 
 @Service
@@ -33,8 +36,13 @@ public class CommentService {
 
     public List<Comment> getComments(List<String> ids) {
         List<Comment> comments = commentRepository.findAllById(ids);
+        List<String> userIds = new ArrayList<>();
+        for (int i = 0; i < comments.size(); i++) {
+            userIds.add(comments.get(i).getCreatedById());
+        }
+        Map<String, User> userMap = userService.getUserMap(userIds);
         comments.stream().forEach(comment -> {
-            comment.setCreatedBy(userService.getUser(comment.getCreatedById()));
+            comment.setCreatedBy(userMap.get(comment.getCreatedById()));
         });
         return comments;
     }
