@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://chinguboard.up.railway.app/api";
+const BASE_URL = "https://gatekeeper.up.railway.app/CHINGUBOARD/api";
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
